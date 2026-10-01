@@ -12,7 +12,7 @@ model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 st.title("Reconocimiento de objetos")
-image = Image.open('analisis.jpg')
+image = Image.open('Analisis.jpg')
 st.image(image, width=350)
 
 with st.sidebar:
