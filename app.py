@@ -38,11 +38,11 @@ if img_file_buffer is not None:
 
     # Mapeo de las 4 clases según tus requerimientos
     if prediction[0][0] > 0.5:
-        st.header('Holi Nicky, con Probabilidad: ' + str(prediction[0][0]))
+        st.header('Hola Humano, con Probabilidad: ' + str(prediction[0][0]))
     elif prediction[0][1] > 0.5:
-        st.header('Celular de Nicky, con Probabilidad: ' + str(prediction[0][1]))
+        st.header('Celular, con Probabilidad: ' + str(prediction[0][1]))
     elif prediction[0][2] > 0.5:
-        st.header('Audifonos de Nicky, con Probabilidad: ' + str(prediction[0][2]))
+        st.header('Audifonos, con Probabilidad: ' + str(prediction[0][2]))
     elif prediction[0][3] > 0.5:
         st.header('No veo nada, con Probabilidad: ' + str(prediction[0][3]))
     else:
